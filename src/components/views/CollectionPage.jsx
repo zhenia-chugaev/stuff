@@ -35,6 +35,7 @@ const CollectionPage = () => {
       dataIndex: 'createdOn',
       key: 'createdOn',
       render: (date) => <time dateTime={date}>{date}</time>,
+      responsive: ['sm'],
       sorter: (a, b) => Date.parse(a.createdOn) - Date.parse(b.createdOn),
       defaultSortOrder: 'descend',
       filters: [
