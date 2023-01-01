@@ -4,7 +4,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 import ThemeSwitcher from './ThemeSwitcher';
 import SearchForm from './SearchForm';
 
-const Header = ({ toggleThemes, toggleLanguages }) => (
+const Header = ({ toggleThemes, toggleLanguages, theme }) => (
   <header className="header">
     <div className="container">
       <div className="header__inner">
@@ -12,7 +12,7 @@ const Header = ({ toggleThemes, toggleLanguages }) => (
           <HomeFilled className="header__icon" />
         </Link>
         <LanguageSwitcher toggleLanguages={toggleLanguages} />
-        <ThemeSwitcher toggleThemes={toggleThemes} />
+        <ThemeSwitcher toggleThemes={toggleThemes} theme={theme} />
         <SearchForm />
       </div>
     </div>

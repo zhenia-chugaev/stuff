@@ -31,7 +31,11 @@ const App = () => {
     <BrowserRouter>
       <IntlProvider locale={language} messages={messages[language]} >
         <div className={`${theme} app`}>
-          <Header toggleThemes={toggleThemes} toggleLanguages={toggleLanguages} />
+          <Header
+            toggleThemes={toggleThemes}
+            toggleLanguages={toggleLanguages}
+            theme={theme}
+          />
           <Main />
           <Footer />
         </div>
